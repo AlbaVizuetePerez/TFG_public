@@ -1,0 +1,4 @@
+# Estas son las librerías importantes para nuestro trabajo 
+Flask            # para la api rest  
+pynacl           # para EdDSA
+oqs-python       # para Dilithium 
