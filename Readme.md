@@ -22,7 +22,7 @@ Levantar los nodos manualmente permite:
 
 Además, esta decisión está directamente relacionada con la gestión manual de la librería **`liboqs`**, utilizada para la criptografía post-cuántica.
 
-La librería `liboqs-python` depende de la compilación previa de `liboqs`, que no se encuentra disponible como paquete binario estándar en los repositorios habituales. Por ello, es necesario compilar manualmente `liboqs` antes de poder instalar el paquete de Python asociado. Esta dependencia impide que el entorno pueda prepararse únicamente mediante un `requirements.txt` o una imagen Docker genérica.
+La librería `liboqs-python` depende de la compilación previa de `liboqs`, que no se encuentra disponible como paquete binario estándar en los repositorios habituales. Por ello, es necesario compilar manualmente `liboqs` antes de poder instalar el paquete de Python asociado. Esta dependencia impide que el entorno pueda prepararse únicamente mediante un `requirements.txt` o un archivo Docker-compose.
 
 ---
 
