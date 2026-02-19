@@ -1,0 +1,26 @@
+[
+  {
+    "sender": "Banco_001",
+    "receiver": "Banco_002",
+    "amount": 10,
+    "timestamp": 1700000001
+  },
+  {
+    "sender": "Banco_002",
+    "receiver": "Banco_003",
+    "amount": 5,
+    "timestamp": 1700000002
+  },
+  {
+    "sender": "Banco_003",
+    "receiver": "Banco_004",
+    "amount": 7,
+    "timestamp": 1700000003
+  },
+  {
+    "sender": "Banco_004",
+    "receiver": "Banco_001",
+    "amount": 3,
+    "timestamp": 1700000004
+  }
+]

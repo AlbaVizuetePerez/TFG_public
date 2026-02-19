@@ -1,0 +1,16 @@
+{
+  "chain_id": "tfg-blockchain",
+  "genesis_time": 0,
+  "balances": {
+    "Banco_001": 1500,
+    "Banco_002": 900,
+    "Banco_003": 1800,
+    "Banco_004": 1100
+  },
+  "public_keys": {
+    "Banco_001": "<hex-public-key>",
+    "Banco_002": "<hex-public-key>",
+    "Banco_003": "<hex-public-key>",
+    "Banco_004": "<hex-public-key>"
+  }
+}
