@@ -1,3 +1,8 @@
+"""
+Actúa como un cliente que manda transacciones a la red. Al mandarlas ha de firmarlas primero mediante el 
+algoritmo de firma seleccionado.
+"""
+
 from __future__ import annotations
 import os
 import json
