@@ -32,13 +32,13 @@ def main():
 
     # copia local de balances para no crear tx inválidas
     local = BALANCES.copy()
-    dataset = []
-    base_ts = int(time.time())
+    dataset = [] # Lista donde se almacenarán las transacciones generadas
+    base_ts = int(time.time()) #timestamp del momento de ejecución
 
     for i in range(N_TX):
         # elegir sender con fondos
-        candidates = [b for b in BANKS if local[b] >= MIN_AMT]
-        if not candidates:
+        candidates = [b for b in BANKS if local[b] >= MIN_AMT] # Seleccionamos solo los bancos con saldo suficiente
+        if not candidates: #Si no hay bancos con fondos suficientes paramos la ejecución
             break
 
         sender = rng.choice(candidates)
@@ -46,14 +46,16 @@ def main():
 
         amt = rng.randint(MIN_AMT, min(MAX_AMT, local[sender]))
         ts = base_ts + i  # timestamps deterministas
-
-        dataset.append({
+        
+        #Creación de la transacción
+        dataset.append({  
             "sender": sender,
             "receiver": receiver,
             "amount": amt,
             "timestamp": ts
         })
-
+        
+        #Actualización de los estados locales simulados tras las transacciones
         local[sender] -= amt
         local[receiver] += amt
 
