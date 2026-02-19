@@ -1,3 +1,7 @@
+""" 
+Benchmark del segundo experimento
+"""
+
 from __future__ import annotations
 import csv
 import time
